@@ -1,0 +1,46 @@
+<!DOCTYPE! html>
+<html>
+<head>
+</head>
+<body>
+<input type="text" id="inputs" value="" placeholder="enter a word"/>
+<button onclick="myFunction()" id="btn">Find Vowles</button>
+<button onclick="myFunction2()" id="btn2">Find vowels count</button>
+<p id="ps"></p>
+
+<script>
+function myFunction(){
+	let word=document.getElementById("inputs").value;
+	let array=[];
+	for(i=0;i<=word.length;i++){
+		if(word[i]=='a'||word[i]=='e'||word[i]=='i'||word[i]=='o'||word[i]=='u')
+		{
+		  array+=word[i];
+		}
+		else
+		{
+		 
+		}
+	  }
+   let para= document.getElementById("ps");
+   para.innerHTML=array;
+}
+
+function myFunction2(){
+   let word=document.getElementById("inputs").value;
+	   let count=0;
+	  for(i=0;i<=word.length;i++){
+		if(word[i]=='a'||word[i]=='e'||word[i]=='i'||word[i]=='o'||word[i]=='u'){
+		  count+=1;
+		}
+		else{
+		 
+		}
+	  }
+  let para= document.getElementById("ps");
+   para.innerHTML=count;
+ }
+  
+</script> 
+</body>
+</html>
